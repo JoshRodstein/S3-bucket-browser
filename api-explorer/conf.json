@@ -1,0 +1,9 @@
+{
+	"bucket-config": {
+		"bucket-name": "swagger-ui-docs",
+		"region": "s3-us-east-2",
+		"domain": "amazonaws.com/",
+		"host-dir": "app",
+    "url": "https://swagger-ui-docs.s3-us-east-2.amazonaws.com/"
+	}
+}

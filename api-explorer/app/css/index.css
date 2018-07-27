@@ -1,0 +1,169 @@
+/* Clear any pre-existing styling or formatting from page */
+* {
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+/**
+* Global & Static Element styling:
+*   - body, header, text
+*/
+body {
+ background-color:#1f568e;
+ width: 100%;
+}
+header {
+  background-color: #1f568e;
+  width: 100%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  z-index: 1;
+}
+a {
+  font-family: Helvetica;
+  text-decoration: none;
+}
+/**
+* Header & Title styles
+*/
+.base--h1 {
+  float: left;
+  position: relative;
+  width: 45%;
+  min-width: 400px;
+  height: inherit;
+  left: 5%;
+  z-index:2;
+}
+.base--h1 a {
+  color: #F5F5F5;
+  font-size:larger;
+  position:inherit;
+  top:25%;
+}
+.base--h1 a:visited {
+    color: #F5F5F5;
+}
+.navbar {
+  float:left;
+  position: fixed;
+  width: 45%;
+  height: 100%;
+  left: 50%;
+  z-index: 1;
+}
+.navbar .button-div {
+  float: left;
+  position: relative;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight:bolder;
+  height: fit-content;
+  width: 75px;
+  left:80%;
+  top:40px;
+}
+.navbar .button-div button {
+  color: #f1e7e7;
+  background-color: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  position:inherit;
+}
+.navbar .button-div button {
+  cursor: pointer;
+}
+
+#api-dropdown-content {
+  position:absolute;
+  background-color: #1f568e;
+  width: 500%;
+  min-height: 225px;
+  top: 50px;
+  left: -112%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -5;
+}
+
+div#dropdown-btn:hover ~ div#api-dropdown-content, 
+div#api-dropdown-content:hover {
+  opacity: 1;
+    transition: opacity 250ms ease-in-out;
+   -moz-transition: opacity 250ms ease-in-out;
+   -webkit-transition: opacity 250ms ease-in-out;
+   visibility: visible;
+}
+button.nav-btn:hover  {
+  color: #53b5ff;
+}
+
+/**
+* Dynamically generated S3 bucket elements
+*/
+#dir-div {
+  padding: 10px;
+  float:left;
+  position: relative;
+  background-color: #1f568e00;
+  width: 200px;
+  left: 75px;
+  top: 50px;
+}
+#dir-div #dir-head {
+  background-color: #1f3e5d00;
+  width: inherit;
+  height: inherit;
+  position: fixed;
+}
+#dir-div #dir-head a{
+  color: #53b5ff;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style:normal;
+}
+#dir-div a {
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: Helvetica;
+}
+
+ul.files {
+  position: relative;
+  top: 25px;
+  list-style-type: none;
+}
+ul.files li {
+  padding-top: 5px;
+  width: inherit;
+  float:left;
+  line-height: 25px;
+}
+ul.files li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #dadada;
+}
+
+/**
+* Template generated elements
+*   - Main wrapper
+*     - swagger-ui iFrame
+*/
+#main {
+  width: 100%;
+  height:fit-content;
+  margin: 1px;
+}
+#swagger-ui {
+  height: 100%;
+  width: 100%;
+  min-width: 500px;
+  float:left;
+  position:fixed;
+  padding-top: 100px;
+  z-index: -1;
+}

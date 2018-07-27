@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--EPC Internal API Explorer Landing Page
+    Written by: Joshua.Rodstein@EllieMae.com-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>EPC API Explorer</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="base--h1">
+      <a href="#">EPC API Explorer</a>
+    </h1>
+    <div class="navbar">
+      <div class="button-div" id="dropdown-btn">
+        <button class="nav-btn" id="api-btn">APIs</button>
+      </div>
+      <div id="api-dropdown-content"></div>
+      <div class="button-div">
+        <button class="nav-btn">Docs</button>
+      </div>
+    </div>
+
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!--js to request and parse XML of S3 Bucket contents-->
+  <script type="text/javascript" src="./javascripts/html-config.js"></script>
+  <script type="text/javascript" src="./javascripts/api-explorer.js"></script>
+  <script type="text/javascript"> window.onload = init(); </script>
+</body>
+
+</html>
