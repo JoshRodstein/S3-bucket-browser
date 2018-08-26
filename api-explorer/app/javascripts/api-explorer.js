@@ -12,7 +12,7 @@ function init() {
 
   /** This creates an Http request and expects an XML document in return */
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://swagger-ui-docs.s3-us-east-2.amazonaws.com/', true);
+  xhr.open('GET', 'https://s3-us-east-2.amazonaws.com/browse-this-bucket', true);
   xhr.responseType = 'document';
   xhr.overrideMimeType('text/xml');
 
@@ -99,7 +99,7 @@ function parseXML(xmlDoc) {
       /**
       * ! Use builder for slate  !
       */
-      url = "http://ec2-18-216-141-185.us-east-2.compute.amazonaws.com:8000";
+      //url = "http://ec2-18-216-141-185.us-east-2.compute.amazonaws.com:8000";
 
       for(var x = 1; x < path.length; x++){
         filename = path[x];
@@ -110,7 +110,7 @@ function parseXML(xmlDoc) {
         element = document.createElement("li");
         swagFrame = document.getElementById("swagger-ui");
 
-        a.setAttribute("onClick", "newSrc('"+url+"', '"+swagFrame.id+"');");
+        //a.setAttribute("onClick", "newSrc('"+url+"', '"+swagFrame.id+"');");
         a.setAttribute('href', '#');
         a.innerText = filename;
         ul.appendChild(element).appendChild(a);
